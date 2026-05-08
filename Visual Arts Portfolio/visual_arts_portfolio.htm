@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Visual Arts Portfolio | GE ELEC 3 - John Loyd L. Ramos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #faf7f2; color: #2c2b28; line-height: 1.5; }
+        .container { max-width: 1300px; margin: 0 auto; padding: 2rem; }
+        .cover { background: linear-gradient(135deg, #1e2a3a 0%, #0f1a24 100%); color: #f3ede8; border-radius: 2rem; padding: 3rem 2rem; margin-bottom: 2.5rem; text-align: center; }
+        .cover h1 { font-family: 'Playfair Display', serif; font-size: 3rem; }
+        .contact-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; }
+        .section-card { background: white; border-radius: 1.75rem; padding: 1.8rem; margin-bottom: 2rem; border: 1px solid #ece3d8; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 600; border-left: 5px solid #d4af7a; padding-left: 1rem; margin-bottom: 1.5rem; }
+        .single-card { display: flex; justify-content: center; margin-top: 1rem; }
+        .card-item { max-width: 350px; background: #fefaf5; border-radius: 1.2rem; overflow: hidden; border: 1px solid #f0e4d4; transition: transform 0.2s; }
+        .card-item:hover { transform: translateY(-5px); }
+        .img-placeholder { background: #e9dfd1; min-height: 170px; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 0.8rem; text-align: center; }
+        .img-placeholder img { max-width: 100%; border-radius: 12px; margin-top: 8px; }
+        .img-placeholder canvas { margin-top: 8px; border-radius: 12px; max-width: 100%; display: none; }
+        .card-caption { padding: 1rem; font-size: 0.9rem; font-weight: 500; }
+        .process-row { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 1rem; }
+        .process-step { flex: 1; background: #fef5ea; border-radius: 1.2rem; padding: 1rem; text-align: center; }
+        footer { text-align: center; padding: 2rem; border-top: 1px solid #e2d5c6; margin-top: 1rem; font-size: 0.8rem; }
+        @media (max-width: 700px) { .container { padding: 1rem; } .cover h1 { font-size: 2rem; } .section-title { font-size: 1.5rem; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- COVER PAGE -->
+    <div class="cover">
+        <h1>⋆⁺₊☾ Reading Visual Arts ☽₊⁺⋆</h1>
+        <p style="font-size:1.3rem;">GE ELEC 3 • Portfolio Presentation</p>
+        <div class="contact-info">
+            <span><i class="fas fa-user"></i> John Loyd L. Ramos</span>
+            <span><i class="fas fa-graduation-cap"></i> BSIT-2G</span>
+            <span><i class="fas fa-envelope"></i> johnloyd.ramos@itstudent.edu</span>
+            <span><i class="fas fa-phone-alt"></i> +63 912 345 6789</span>
+        </div>
+    </div>
+
+    <!-- ARTIST STATEMENT -->
+    <div class="section-card">
+        <div class="section-title">✦ Artist Statement</div>
+        <p>As an aspiring IT professional, I believe visual literacy is key to designing effective digital experiences. This portfolio showcases my exploration of visual language — from digital collage to observational drawing, abstract composition, Filipino patterns, and an infographic on computer vision in art.</p>
+        <p style="margin-top:0.8rem; font-style:italic;">— John Loyd L. Ramos, BSIT-2G, 2025</p>
+    </div>
+
+    <!-- MODULE 1: png1.png -->
+    <div class="section-card">
+        <div class="section-title">📸 Module 1 · Digital Visual World Collage</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-globe fa-3x" style="color:#2c5f2d;"></i>
+                    <div style="font-weight:500;">🌆 Urban Pixel Weave</div>
+                    <img src="png1.png" alt="Urban Pixel Weave" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod1" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">Digital collage ng mga fragment ng lungsod, glitch, at found imagery.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODULE 2: png2.png -->
+    <div class="section-card">
+        <div class="section-title">✍️ Module 2 · Observational Drawing</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-pencil-ruler fa-3x"></i>
+                    <div>Observational Study</div>
+                    <img src="png2.png" alt="Observational Drawing" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod2" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">Observational drawing study focusing on line, shape, form, space, texture, value, and color.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODULE 3: png3.png (unchanged - no new content provided) -->
+    <div class="section-card">
+        <div class="section-title">🎨 Module 3 · Abstract Composition</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-chalkboard-user fa-3x"></i>
+                    <div>Abstract Artwork</div>
+                    <img src="png3.png" alt="Abstract Composition" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod3" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">"Rhythm of Noise" – acrylic & digital abstraction.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODULE 4: png4.png -->
+    <div class="section-card">
+        <div class="section-title">🔄 Module 4 · Transformation Series (Final Version)</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-dragon fa-2x"></i>
+                    <div>Mythical abstraction</div>
+                    <img src="png4.png" alt="Transformation Final" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod4" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">Final transformation – symbolic narrative</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODULE 5: png5.png -->
+    <div class="section-card">
+        <div class="section-title">🇵🇭 Module 5 · Filipino-Inspired Pattern Design</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-fan fa-3x"></i>
+                    <div>🌾 Inaul & Okir motifs</div>
+                    <img src="png5.png" alt="Filipino Pattern" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod5" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">Traditional "Panulukan" pattern – inspired by Mindanao textile.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODULES 6-7: png6.png -->
+    <div class="section-card">
+        <div class="section-title">🖌️ Modules 6–7 · Drawing / Painting Artwork</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-tree fa-3x"></i> + charcoal rendering
+                    <img src="png6.png" alt="Drawing/Painting" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod6" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">"Silent Canopy" – charcoal on paper.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODULE 8: png7.png -->
+    <div class="section-card">
+        <div class="section-title">📢 Module 8 · Digital Poster</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-film fa-2x"></i> <i class="fas fa-ticket-alt"></i>
+                    <div>“Visual Literacy Matters”</div>
+                    <img src="png7.png" alt="Digital Poster" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod8" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">Advocacy poster: semiotics & visual culture.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODULE 9: png8.png - UPDATED: Daily life photo narrative -->
+    <div class="section-card">
+        <div class="section-title">📷 Module 9 · Photo Narrative Series</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-camera-retro fa-3x"></i>
+                    <div>Morning routine · Jogging · School tasks</div>
+                    <img src="png8.png" alt="Photo Narrative" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod9" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">Daily life photo narrative: early morning routine, jogging, and checking school activities.</div>
+            </div>
+        </div>
+        <p style="margin-top:0.8rem;">Narrative: Waking up with the sunrise, a mindful jog through the park, then settling down to browse modules and school updates. Visual storytelling of a productive student day.</p>
+    </div>
+
+    <!-- MODULE 10: png9.png - UPDATED: Cybersecurity infographic -->
+    <div class="section-card">
+        <div class="section-title">📊 Module 10 · Infographic (IT Topic: Cybersecurity Threats & Safety Tips)</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-shield-haltered fa-2x"></i>
+                    <div>Cybersecurity Infographic</div>
+                    <img src="png9.png" alt="Cybersecurity Infographic" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod10" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">Cybersecurity infographic covering threats (phishing, malware, weak passwords) and safety tips (2FA, updates, backups).</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODULE 11: png10.png - UPDATED: Meme comparing unverified news vs fact-checking -->
+    <div class="section-card">
+        <div class="section-title">😂 Module 11 · Meme Series Creation</div>
+        <div class="single-card">
+            <div class="card-item">
+                <div class="img-placeholder">
+                    <i class="fas fa-newspaper fa-2x"></i> <i class="fas fa-check-double fa-2x"></i>
+                    <div>Misinformation vs Fact-Checking</div>
+                    <img src="png10.png" alt="Meme" onerror="this.style.display='none'; this.nextSibling.style.display='block';">
+                    <canvas id="fallbackMod11" width="280" height="160"></canvas>
+                </div>
+                <div class="card-caption">Meme comparing sharing unverified news vs. fact-checking — "Expectations vs Reality" style.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROCESS DOCUMENTATION -->
+    <div class="section-card">
+        <div class="section-title">📓 Process Documentation · Sketches & Iterations</div>
+        <div class="process-row">
+            <div class="process-step"><i class="fas fa-drafting-compass fa-2x"></i><h4>Transformation Series</h4><small>Thumbnail sketches, value exploration</small></div>
+            <div class="process-step"><i class="fas fa-palette fa-2x"></i><h4>Digital Poster</h4><small>Typography trials → layout wireframes</small></div>
+            <div class="process-step"><i class="fas fa-fabric fa-2x"></i><h4>Filipino Pattern</h4><small>Hand-drawn motifs → vectorization</small></div>
+        </div>
+    </div>
+
+    <footer><i class="fas fa-heart" style="color:#b87333;"></i> John Loyd L. Ramos | BSIT-2G | GE ELEC 3 Final Output</footer>
+</div>
+
+<script>
+    // FALLBACK DRAWINGS para sa bawat PNG (kung wala ang image file)
+    function drawFallback(id, type) {
+        const canvas = document.getElementById(id);
+        if(!canvas) return;
+        canvas.width = 280; canvas.height = 160;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = "#e9dfd1"; ctx.fillRect(0,0,280,160);
+        if(type === 'mod1') {
+            ctx.fillStyle = "#2c3e2f"; ctx.fillRect(0,0,280,160);
+            ctx.fillStyle = "#b08d5b"; ctx.fillRect(20,30,100,80);
+            ctx.fillStyle = "#c9ae7a"; ctx.fillRect(140,80,100,60);
+            for(let i=0;i<80;i++){ ctx.fillStyle = `rgba(255,200,100,${Math.random()*0.7})`; ctx.fillRect(Math.random()*280, Math.random()*160, 3,3); }
+        } else if(type === 'mod2') {
+            for(let i=0;i<7;i++){ ctx.fillStyle = `hsl(${i*50},70%,60%)`; ctx.fillRect(20+i*35,50,25,60); }
+        } else if(type === 'mod3') {
+            ctx.fillStyle = "#e0a878"; ctx.beginPath(); ctx.ellipse(140,80,70,50,0,0,Math.PI*2); ctx.fill();
+            ctx.fillStyle = "#b56540"; ctx.fillRect(60,40,90,80);
+        } else if(type === 'mod4') {
+            ctx.fillStyle = "#ddbc88"; ctx.fillRect(70,40,140,80);
+            ctx.fillStyle = "#a57348"; ctx.beginPath(); ctx.moveTo(140,30); ctx.lineTo(180,80); ctx.lineTo(100,80); ctx.fill();
+        } else if(type === 'mod5') {
+            for(let i=0;i<5;i++){ ctx.fillStyle = `hsl(${30+i*70},70%,50%)`; ctx.fillRect(30+i*50,50,40,60); }
+        } else if(type === 'mod6') {
+            ctx.fillStyle = "#8b5a2b"; ctx.fillRect(70,30,140,110);
+            for(let i=0;i<15;i++){ ctx.fillStyle = "#3a2a1a"; ctx.fillRect(75+i*9,35,4,100); }
+        } else if(type === 'mod8') {
+            ctx.fillStyle = "#cbd5b5"; ctx.fillRect(0,0,280,160);
+            ctx.fillStyle = "#2c3e2f"; ctx.font = "bold 20px Inter"; ctx.fillText("Visual Literacy", 60, 90);
+        } else if(type === 'mod9') {   // daily life narrative: morning routine, jogging, school activities
+            ctx.fillStyle = "#f4e3c6"; ctx.fillRect(0,0,280,160);
+            ctx.fillStyle = "#7c5e3a"; ctx.fillRect(30,30,70,50);  // sun
+            ctx.fillStyle = "#c49a6c"; ctx.beginPath(); ctx.ellipse(180,110,30,20,0,0,Math.PI*2); ctx.fill(); // jogger
+            ctx.fillStyle = "#2c5e3a"; ctx.fillRect(230,130,30,15); // notebook
+            ctx.fillStyle = "#2c2b28"; ctx.font = "italic 12px Inter"; ctx.fillText("☀️ jog → 📚 school tasks", 70, 145);
+        } else if(type === 'mod10') {  // cybersecurity infographic
+            ctx.fillStyle = "#0a1c2a"; ctx.fillRect(0,0,280,160);
+            ctx.fillStyle = "#3a86ff"; ctx.fillRect(20,30,60,50); ctx.fillStyle = "#ff006e"; ctx.fillRect(100,50,60,50); ctx.fillStyle = "#fb5607"; ctx.fillRect(180,70,60,50);
+            ctx.fillStyle = "#ffffff"; ctx.font = "bold 14px Inter"; ctx.fillText("Threats: Phishing", 30, 110); ctx.fillText("Safety: 2FA", 110, 130);
+            ctx.fillStyle = "#ffbe0b"; ctx.fillRect(20,135,60,12); ctx.fillRect(110,135,90,12);
+        } else if(type === 'mod11') {  // meme: unverified vs fact-checking
+            ctx.fillStyle = "#fff3e0"; ctx.fillRect(0,0,280,160);
+            ctx.fillStyle = "#d00000"; ctx.fillRect(20,30,110,50); ctx.fillStyle = "#000"; ctx.font = "bold 14px Inter"; ctx.fillText("Sharing unverified news", 30, 60);
+            ctx.fillStyle = "#008b64"; ctx.fillRect(150,30,110,50); ctx.fillStyle = "#fff"; ctx.fillText("Fact-checking first", 170, 60);
+            ctx.fillStyle = "#9c6b3e"; ctx.font = "italic 16px Inter"; ctx.fillText("📢 vs 🔍", 120, 110);
+            ctx.fillStyle = "#2b2b2b"; ctx.font = "bold 12px Inter"; ctx.fillText("expectations vs reality", 85, 145);
+        }
+        canvas.style.display = 'block';
+    }
+    drawFallback('fallbackMod1', 'mod1');
+    drawFallback('fallbackMod2', 'mod2');
+    drawFallback('fallbackMod3', 'mod3');
+    drawFallback('fallbackMod4', 'mod4');
+    drawFallback('fallbackMod5', 'mod5');
+    drawFallback('fallbackMod6', 'mod6');
+    drawFallback('fallbackMod8', 'mod8');
+    drawFallback('fallbackMod9', 'mod9');
+    drawFallback('fallbackMod10', 'mod10');
+    drawFallback('fallbackMod11', 'mod11');
+</script>
+</body>
+</html>
